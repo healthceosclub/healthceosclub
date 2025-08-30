@@ -1,0 +1,37 @@
+:root{--bg:#0b0f14;--card:#121821;--ink:#e8eef7;--muted:#a8b3c2;--brand:#4ba3ff;--accent:#9ad16a}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b0f14,#0e141c);color:var(--ink);line-height:1.6}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{width:min(1100px,92vw);margin:0 auto}
+.site-header{position:sticky;top:0;background:rgba(11,15,20,.85);backdrop-filter:saturate(1.2) blur(8px);z-index:10;border-bottom:1px solid #18202b}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{font-weight:800;font-size:20px;color:var(--ink);text-decoration:none}
+.links{display:flex;gap:18px;align-items:center}
+.links a{color:var(--muted);padding:6px 8px;border-radius:8px}
+.links a[aria-current="page"],.links a:hover{color:var(--ink);background:#18202b}
+.menu-btn{display:none;background:transparent;border:0;font-size:22px;color:var(--ink)}
+.hero{padding:92px 0;background:radial-gradient(1200px 400px at 50% -10%,#1a2740 0%,transparent 60%)}
+.hero-inner{max-width:800px}
+.hero h1{font-size:44px;line-height:1.1;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0 0 22px}
+.btn{display:inline-block;background:var(--brand);color:#00122b;padding:12px 18px;border-radius:12px;font-weight:700}
+.btn.secondary{background:var(--accent);color:#03120a}
+.btn.small{padding:8px 12px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:40px 0}
+.card{background:var(--card);padding:22px;border:1px solid #202938;border-radius:14px}
+.highlight{padding:40px 0;text-align:center}
+.contact{padding:40px 0}
+.list{margin:0;padding-left:18px}
+.timeline{display:grid;gap:18px;margin:28px 0 60px}
+.trow{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:start}
+.tdate{font-weight:700;color:var(--accent)}
+.site-footer{border-top:1px solid #18202b;margin-top:40px}
+.foot{display:flex;justify-content:space-between;align-items:center;padding:18px 0;color:var(--muted)}
+@media (max-width:860px){
+  .grid{grid-template-columns:1fr}
+  .menu-btn{display:block}
+  .links{position:absolute;right:4vw;top:58px;background:#111826;border:1px solid #1c2633;border-radius:12px;padding:10px;display:none;flex-direction:column}
+  .links.show{display:flex}
+}

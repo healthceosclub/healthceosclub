@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Events • Health CEOs' Club</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Health CEOs' Club</a>
+    <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    <nav id="mainnav" class="links">
+      <a href="index.html">Home</a>
+      <a href="history.html">History</a>
+      <a href="events.html" aria-current="page">Events</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Events</h1>
+
+  <section class="card">
+    <h2>Upcoming</h2>
+    <p>Request a place for the next dinner using Eventbrite.</p>
+    <a class="btn" href="https://www.eventbrite.co.uk/o/health-ceos-club-17065391348">Open Eventbrite</a>
+  </section>
+
+  <section class="card">
+    <h2>Past events</h2>
+    <ul class="list">
+      <li>Dinner programme 2024–2022</li>
+      <li>Dinner programme 2019–2016</li>
+    </ul>
+    <p>If you need specific details for earlier dinners, contact the Club.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container foot">
+    <p>© <span id="year"></span> Health CEOs' Club</p>
+    <p><a href="index.html#contact">Get in touch</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
